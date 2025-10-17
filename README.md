@@ -2,11 +2,11 @@
 
 A comprehensive and secure RESTful blog platform built with Spring Boot, featuring JWT authentication, role-based access control, and complete CRUD operations for managing users, posts, categories, and comments.
 
-## 🚀 Overview
+##  Overview
 
 This application provides a robust backend service for a blogging platform with enterprise-grade security implementations, file upload capabilities, and a well-structured API design following REST principles.
 
-## 🏗️ Architecture & Technology Stack
+##  Architecture & Technology Stack
 
 ### **Core Technologies**
 - **Java**: 17
@@ -27,7 +27,7 @@ This application provides a robust backend service for a blogging platform with 
 - **ModelMapper**: 3.2.0 - Object mapping
 - **Spring Boot DevTools**: Development productivity
 
-## 🔒 Security Implementation
+##  Security Implementation
 
 ### **Authentication & Authorization**
 - **JWT Token-based Authentication**: Stateless authentication mechanism
@@ -60,7 +60,7 @@ This application provides a robust backend service for a blogging platform with 
 - Input validation using `@Valid` annotations
 - Exception handling for security violations
 
-## 📊 Database Schema & Entity Relationships
+##  Database Schema & Entity Relationships
 
 ### **Entity Relationship Diagram**
 ```
@@ -117,7 +117,7 @@ Table: comments
 ```
 **Relationships**: Many-to-One with Post
 
-## 🔗 API Documentation
+## API Documentation
 
 ### **Base URL**: `http://localhost:8080`
 
@@ -261,7 +261,7 @@ Request Body:
 #### **DELETE** `/api/comments/{commentId}`
 **Description**: Delete a comment
 
-## 🛠️ Application Configuration
+## Application Configuration
 
 ### **Environment Variables Configuration**
 
@@ -295,14 +295,14 @@ SECURITY_LOG_LEVEL=INFO
 ```
 
 ### **Security Best Practices Implemented**
-- ✅ **Environment Variables**: All sensitive data externalized
-- ✅ **JWT Secret**: Configurable secret key for token signing
-- ✅ **Database Credentials**: Not hardcoded in configuration
-- ✅ **Git Ignore**: Comprehensive `.gitignore` prevents credential leakage
-- ✅ **Default Values**: Fallback values for development
-- ✅ **Template File**: `.env.example` for easy setup
+-  **Environment Variables**: All sensitive data externalized
+-  **JWT Secret**: Configurable secret key for token signing
+-  **Database Credentials**: Not hardcoded in configuration
+-  **Git Ignore**: Comprehensive `.gitignore` prevents credential leakage
+-  **Default Values**: Fallback values for development
+-  **Template File**: `.env.example` for easy setup
 
-## 🏃‍♂️ Getting Started
+##  Getting Started
 
 ### **Prerequisites**
 - Java 17 or higher
@@ -379,7 +379,7 @@ The application will start on `http://localhost:8080` (or your configured SERVER
 - **Username**: `admin`, **Password**: `admin`, **Role**: ADMIN
 - **Username**: `dhriti`, **Password**: `Dhriti@123`, **Role**: ADMIN
 
-## 📝 API Usage Examples
+## API Usage Examples
 
 ### **1. Authentication**
 ```bash
@@ -403,27 +403,27 @@ curl -X POST http://localhost:8080/api/posts/upload/image/1 \
   -F "image=@/path/to/image.jpg"
 ```
 
-## 🔧 Key Features
+## Key Features
 
-### **✅ Implemented Features**
-- ✅ **JWT-based Authentication & Authorization**
-- ✅ **Environment Variables Configuration**
-- ✅ **Secure Credential Management**
-- ✅ **User Management (CRUD operations)**
-- ✅ **Post Management with Categories**
-- ✅ **Comment System**
-- ✅ **File Upload (Image handling)**
-- ✅ **Pagination & Sorting**
-- ✅ **Search Functionality**
-- ✅ **Input Validation**
-- ✅ **Exception Handling**
-- ✅ **Role-based Access Control**
-- ✅ **Password Encryption (BCrypt)**
-- ✅ **RESTful API Design**
-- ✅ **Comprehensive .gitignore**
-- ✅ **Production-ready Configuration**
+###  Implemented Features
+-  **JWT-based Authentication & Authorization**
+- **Environment Variables Configuration**
+-  **Secure Credential Management**
+-  **User Management (CRUD operations)**
+-  **Post Management with Categories**
+-  **Comment System**
+-  **File Upload (Image handling)**
+-  **Pagination & Sorting**
+-  **Search Functionality**
+-  **Input Validation**
+-  **Exception Handling**
+-  **Role-based Access Control**
+-  **Password Encryption (BCrypt)**
+-  **RESTful API Design**
+-  **Comprehensive .gitignore**
+-  **Production-ready Configuration**
 
-### **🚀 Advanced Features**
+### ** Advanced Features**
 - **Pagination**: Efficient data retrieval with customizable page size
 - **Sorting**: Multi-field sorting capability
 - **Search**: Content-based post search
@@ -434,7 +434,7 @@ curl -X POST http://localhost:8080/api/posts/upload/image/1 \
 - **Exception Handling**: Global exception management
 - **Production Ready**: Environment-specific configurations
 
-## 🔍 Project Structure
+##  Project Structure
 ```
 springboot-blog-platform/
 ├── src/main/java/com/BlogApp/
@@ -470,7 +470,7 @@ springboot-blog-platform/
 └── README.md                    # This documentation
 ```
 
-## 🔐 Security & Environment Management
+##  Security & Environment Management
 
 ### **Files Added for Security**
 - **`.env.example`** - Template for environment variables
@@ -485,23 +485,3 @@ All sensitive configuration moved to environment variables:
 - Server ports
 - File upload paths
 - Logging levels
-
-## 🤝 Contributing
-
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
-
-## 📄 License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
-
-## 📞 Support
-
-For support and questions, please contact the development team or create an issue in the repository.
-
----
-
-**Built with ❤️ using Spring Boot**
